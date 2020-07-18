@@ -1,5 +1,60 @@
-{% extends 'base.html'%}
-
+{% extends "base.html" %}
+{% block nav_index %}active{% endblock %}
 {% block content %}
+<!-- parallax -->
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Find places to Run, Walk or Hike in Cork</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">See the very best of Cork on foot!</h5>
+        </div>
+        <div class="row center">
+          <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Use this buttoon to link to the other page</a>
+        </div>
+        <br><br>
 
-<h1>This is my website</h1>
+     
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">One of our City Walks includes the stunning UCC Quad</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="./static/images/background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Place Holder for map link</h4>
+          <p class="left-align light">Map Link here</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Sunset near Kinsale</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="./static/images/background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+{% endblock %}
