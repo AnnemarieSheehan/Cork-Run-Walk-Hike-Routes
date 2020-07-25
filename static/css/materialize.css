@@ -2812,7 +2812,7 @@ video.responsive-video {
 }
 
 .parallax-container {
-  position: relative;
+  /*position: relative; coding out as causing issues*/
   overflow: hidden;
   height: 500px;
 }
