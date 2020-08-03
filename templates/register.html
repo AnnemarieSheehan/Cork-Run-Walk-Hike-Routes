@@ -1,13 +1,34 @@
 {% extends 'base.html' %}
 {% block content %}
 <body>
-<h1>registration</h1>
+<h3 class="center-align">Register Here</h1>
 
 <div class="row">
-    <form class="col s12 m8 offset-m2">
+    <form class="col s12 m5 offset-m2" method="POST" action="{{ url_for('register')}}">
       <div class="card-panel teal">
-        <span>this is my registration card</span>
+      <!--Username-->
+        <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="username" name="username" type="text" class="validate">
+          <label for="Username">Username</label>
+        </div>
+    </div>
+    <!--Password-->
+    <div class="row">
+        <div class="input-field col s12">
+        <i class="material-icons prefix">account_circle</i>
+          <input id="password" name="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
       </div>
+      <!--Register Button -->
+      <div class="row">
+      <button class="btn waves-effect waves-light" type="submit" name="action">Register
+    <i class="material-icons right">send</i>
+  </button>
+    </div>
+</div>
     </form>
   </div>
 
